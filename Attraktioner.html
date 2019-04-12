@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="DA">
+<head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Attraktioner</title>
+</head>
+<style>
+
+
+
+/*| Navigation |*/
+
+nav{
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+
+
+
+
+/*********** INDHOLD START ***********/
+
+
+      #attraktioner {
+        display: grid;
+        width:100%;
+        height: 600px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .attraktion1 img{
+        width: 100%;
+        z-index: -10;
+    }
+    .attraktion2 img{
+        width: 100%;
+        z-index: -10;
+    }
+    .attraktion3 img{
+        width: 100%;
+        z-index: -10;
+
+    }
+    /******** OVERLAY*********/
+    .attraktion1 {
+  position: relative;
+  width: 100%;
+
+}
+    .attraktion2 {
+  position: relative;
+  width: 100%;
+
+}
+   .attraktion3 {
+  position: relative;
+  width: 100%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.attraktion1:hover .image {
+  opacity: 0.3;
+}
+
+.attraktion1:hover .middle {
+  opacity: 1;
+}
+    .attraktion2:hover .image {
+  opacity: 0.3;
+}
+
+.attraktion2:hover .middle {
+  opacity: 1;
+}
+    .attraktion3:hover .image {
+  opacity: 0.3;
+}
+
+.attraktion3:hover .middle {
+  opacity: 1;
+}
+    .middle {
+        cursor: pointer;
+    }
+
+.text {
+
+  color: white;
+  font-size: 37px;
+
+}
+    a{
+        text-decoration: none;
+    }
+
+    /************ IKONER ***********/
+
+</style>
+<body>
+    <Header>
+ <nav role='navigation'>
+  <ul>
+    <li><a href="index.html">Start side</a></li>
+    <li><a href="Attraktioner.html">Attraktioner</a>
+      <ul>
+        <li><a href="stevns-fort.html">Koldkrigsmuseum Stevns fort</a></li>
+        <li><a href="">Stevns klint</a></li>
+        <li><a href="">Geomuseum Faxe</a></li>
+      </ul>
+    </li>
+    <li><a href="aktuelt.html">Aktuelt</a></li>
+    <li><a href="om-os.html">Om os</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
+    </Header>
+    <section>
+      <div id="attraktioner">
+         <div class="attraktion1">
+          <img src="img/stevns_fort.jpg" alt="Stevns fort" class="image" style="width:100%">
+          <div class="middle">
+          <a href="stevns-fort.html">
+          <div class="text">Koldkrigsmuseum Stevns fort</div>
+          </a>
+  </div>
+</div>
+          <div class="attraktion2">
+                 <img src="img/stenvs_klint.jpg" alt="Stevns klint" class="image" style="width:100%">
+          <div class="middle">
+          <div class="text">Stevns Klint</div>
+  </div>
+
+          </div>
+          <div class="attraktion3">
+                 <img src="img/geomuseum_faxe.jpg" alt="Geomuseum Faxe" class="image" style="width:100%">
+          <div class="middle">
+          <div class="text">Geomuseum Faxe</div>
+  </div>
+
+          </div>
+      </div>
+       <!-- The video -->
+
+
+<footer class="contentwrapper">
+ <div class="content footy">
+
+  <p>Kontakt</p>
+
+</div>
+   <div class="content2 footy">
+
+        <img src="img/iconfinder_facebook_4416093.svg">
+
+    </div>
+    <div class="content3 footy">
+        <img src="img/iconfinder_insta_4416094.svg">
+    </div>
+    <div class="content4 footy">
+        <p>Søge funktion</p>
+    </div>
+    </footer>
+
+
+
+
+
+    </section>
+
+    <script>
+
+
+
+
+
+    </script>
+</body>
+</html>
