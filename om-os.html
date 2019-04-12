@@ -59,8 +59,8 @@
 
        async function hentJson() {
            console.log("Henter json");
-          // const url = "http://nicklasgrafisk.dk/kea/07-CMS/sushiwp/wordpress/wp-json/wp/v2/pages/20";
-           // Henter data filen
+           const url = "http://nicklasgrafisk.dk/kea/07-CMS/kalklandet/wordpress/wp-json/wp/v2/om_os";
+
            const myJson = await fetch(url);
            // den hentede data skal tolkes som json
            indhold = await myJson.json();
@@ -71,7 +71,7 @@
        }
     function visIndhold() {
         console.log("Viser indhold");
-        document.querySelector(".overskrift").innerHTML = indhold.title.rendered;
+
         document.querySelector(".indhold").innerHTML = indhold.content.rendered;
         // Viser indholdet
     }
