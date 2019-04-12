@@ -30,11 +30,16 @@ nav{
   box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
   border: 1px solid rgba(0,0,0,.1);
 }
+nav img {
+    width: 5%;
+
+
+}
   nav ul{
     list-style: none;
     position: relative;
     float: none;
-    left: 30%;
+    left: 24%;
     margin-right: 100px;
     display: inline-table;
       z-index: 10;
