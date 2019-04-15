@@ -71,7 +71,7 @@
        }
     function visIndhold() {
         console.log("Viser indhold");
-
+        document.querySelector(".overskrift").innerHTML = indhold.title.rendered;
         document.querySelector(".indhold").innerHTML = indhold.content.rendered;
         // Viser indholdet
     }
