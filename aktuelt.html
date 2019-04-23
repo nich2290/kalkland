@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="DA">
+
 <head>
     <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 
-    <title>Om os</title>
+    <title>Aktuelt</title>
 </head>
 <style>
-
-
-
     /************ IKONER ***********/
 
 </style>
-<body>
-               <!-- NAVIGATION -->
-    <Header>
- <nav role='navigation'>
- <img src="img/SVG/Artboard%2010.svg">
-  <ul>
-    <li><a href="index.html">Start side</a></li>
-    <li><a href="Attraktioner.html">Attraktioner</a>
 
-    </li>
-    <li><a href="aktuelt.html">Aktuelt</a></li>
-    <li><a href="om-os.html">Om os</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-  </ul>
-</nav>
+<body>
+    <!-- NAVIGATION -->
+    <Header>
+        <nav role='navigation'>
+            <img src="img/SVG/Artboard%2010.svg">
+            <ul>
+                <li><a href="index.html">Start side</a></li>
+                <li><a href="Attraktioner.html">Attraktioner</a>
+
+                </li>
+                <li><a href="aktuelt.html">Aktuelt</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </Header>
 
 
-                   <!-- Her starter indhold -->
+    <!-- Her starter indhold -->
     <h2 class="overskrift"></h2>
-   <main class="indhold"></main>
+    <main class="indhold"></main>
 
-               <!--- HER STARTER FOOTER -->
-<footer class="contentwrapper">
- <div class="content footy">
+    <!--- HER STARTER FOOTER -->
+    <footer class="contentwrapper">
+        <div class="content footy">
 
-  <p>Kontakt</p>
+            <p>Kontakt</p>
 
-</div>
+        </div>
 
-    <div class="content4 footy">
-        <p>Søge funktion</p>
-    </div>
+        <div class="content4 footy">
+            <p>Søge funktion</p>
+        </div>
     </footer>
 
 
@@ -55,30 +54,32 @@
 
 
 
-  <script>
-    let indhold;
-       document.addEventListener("DOMContentLoaded", hentJson);
-       //Hent JSON fil i asynkron function
+    <script>
+        let indhold;
+        document.addEventListener("DOMContentLoaded", hentJson);
+        //Hent JSON fil i asynkron function
 
-       async function hentJson() {
-           console.log("Henter json");
-          // const url = "http://nicklasgrafisk.dk/kea/07-CMS/sushiwp/wordpress/wp-json/wp/v2/pages/20";
-           // Henter data filen
-           const myJson = await fetch(url);
-           // den hentede data skal tolkes som json
-           indhold = await myJson.json();
-           //Kald funktion der viser data i DOM
-           visIndhold();
+        async function hentJson() {
+            console.log("Henter json");
+            // const url = "http://nicklasgrafisk.dk/kea/07-CMS/sushiwp/wordpress/wp-json/wp/v2/pages/20";
+            // Henter data filen
+            const myJson = await fetch(url);
+            // den hentede data skal tolkes som json
+            indhold = await myJson.json();
+            //Kald funktion der viser data i DOM
+            visIndhold();
 
-           //Henter indholdet
-       }
-    function visIndhold() {
-        console.log("Viser indhold");
-        document.querySelector(".overskrift").innerHTML = indhold.title.rendered;
-        document.querySelector(".indhold").innerHTML = indhold.content.rendered;
-        // Viser indholdet
-    }
+            //Henter indholdet
+        }
+
+        function visIndhold() {
+            console.log("Viser indhold");
+            document.querySelector(".overskrift").innerHTML = indhold.title.rendered;
+            document.querySelector(".indhold").innerHTML = indhold.content.rendered;
+            // Viser indholdet
+        }
 
     </script>
 </body>
+
 </html>
