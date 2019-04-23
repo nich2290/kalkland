@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="DA">
+
 <head>
     <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 
     <title>Om os</title>
@@ -13,45 +14,47 @@
         margin-left: 10vw;
 
     }
+
     .om-indhold {
         margin-left: 10vw;
         margin-right: 10vw;
     }
 
 </style>
+
 <body>
-               <!-- NAVIGATION -->
-    <Header>
- <nav role='navigation'>
- <img src="img/SVG/Artboard%2010.svg">
-  <ul>
-    <li><a href="index.html">Start side</a></li>
-    <li><a href="Attraktioner.html">Attraktioner</a>
+    <!-- NAVIGATION -->
+    <header>
+        <nav role='navigation'>
+            <img src="img/SVG/Artboard%2010.svg">
+            <ul>
+                <li><a href="index.html">Start side</a></li>
+                <li><a href="Attraktioner.html">Attraktioner</a>
 
-    </li>
-    <li><a href="aktuelt.html">Aktuelt</a></li>
-    <li><a href="om-os.html">Om os</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-  </ul>
-</nav>
-    </Header>
+                </li>
+                <li><a href="aktuelt.html">Aktuelt</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-                   <!-- Her starter indhold -->
+    <!-- Her starter indhold -->
     <h2 class="om-overskrift"></h2>
-   <main class="om-indhold"></main>
+    <main class="om-indhold"></main>
 
-               <!--- HER STARTER FOOTER -->
-<footer class="contentwrapper">
- <div class="content footy">
+    <!--- HER STARTER FOOTER -->
+    <footer class="contentwrapper">
+        <div class="content footy">
 
-  <p>Kontakt</p>
+            <p>Kontakt</p>
 
-</div>
+        </div>
 
-    <div class="content4 footy">
-        <p>Søge funktion</p>
-    </div>
+        <div class="content4 footy">
+            <p>Søge funktion</p>
+        </div>
     </footer>
 
 
@@ -60,31 +63,33 @@
 
 
 
-  <script>
-    let indhold;
-       document.addEventListener("DOMContentLoaded", hentJson);
-       //Hent JSON fil i asynkron function
+    <script>
+        let indhold;
+        document.addEventListener("DOMContentLoaded", hentJson);
+        //Hent JSON fil i asynkron function
 
-       async function hentJson() {
-           console.log("Henter json");
-           const url = "http://nicklasgrafisk.dk/kea/07-CMS/kalklandet/wordpress/wp-json/wp/v2/om_os/20";
+        async function hentJson() {
+            console.log("Henter json");
+            const url = "http://nicklasgrafisk.dk/kea/07-CMS/kalklandet/wordpress/wp-json/wp/v2/om_os/20";
 
-           const myJson = await fetch(url);
-           // den hentede data skal tolkes som json
-           indhold = await myJson.json();
-           //Kald funktion der viser data i DOM
-           visIndhold();
-           console.log("indhold",indhold)
+            const myJson = await fetch(url);
+            // den hentede data skal tolkes som json
+            indhold = await myJson.json();
+            //Kald funktion der viser data i DOM
+            visIndhold();
+            console.log("indhold", indhold)
 
-           //Henter indholdet
-       }
-    function visIndhold() {
-        console.log("Viser indhold");
-        document.querySelector(".om-overskrift").innerHTML = indhold.titel;
-        document.querySelector(".om-indhold").innerHTML = indhold.indhold1;
-        // Viser indholdet
-    }
+            //Henter indholdet
+        }
+
+        function visIndhold() {
+            console.log("Viser indhold");
+            document.querySelector(".om-overskrift").innerHTML = indhold.titel;
+            document.querySelector(".om-indhold").innerHTML = indhold.indhold1;
+            // Viser indholdet
+        }
 
     </script>
 </body>
+
 </html>
