@@ -9,6 +9,10 @@
     <title>Kontakt</title>
 </head>
 <style>
+    .kontakt-overskrift {
+        margin-top: 7vw;
+        margin-left: 10vw;
+    }
 
 
 
@@ -35,8 +39,10 @@
 
 
     <!-- Her starter indhold -->
-    <h2 class="overskrift"></h2>
-    <main class="indhold"></main>
+    <h2 class="kontakt-overskrift">Kontakt</h2>
+    <main class="kontakt-indhold">
+
+    </main>
 
     <!--- HER STARTER FOOTER -->
     <footer class="contentwrapper">
@@ -77,8 +83,8 @@
 
         function visIndhold() {
             console.log("Viser indhold");
-            document.querySelector(".overskrift").innerHTML = indhold.title.rendered;
-            document.querySelector(".indhold").innerHTML = indhold.content.rendered;
+            document.querySelector(".kontakt-overskrift").innerHTML = indhold.title;
+            document.querySelector(".kontakt-indhold").innerHTML = indhold.indhold1;
             // Viser indholdet
         }
 
