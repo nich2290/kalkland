@@ -8,7 +8,15 @@
     <title>Om os</title>
 </head>
 <style>
+    .om-overskrift {
+        margin-top: 7vw;
+        margin-left: 10vw;
 
+    }
+    .om-indhold {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
 
 </style>
 <body>
@@ -30,8 +38,8 @@
 
 
                    <!-- Her starter indhold -->
-    <h2 class="overskrift"></h2>
-   <main class="indhold"></main>
+    <h2 class="om-overskrift"></h2>
+   <main class="om-indhold"></main>
 
                <!--- HER STARTER FOOTER -->
 <footer class="contentwrapper">
@@ -59,20 +67,21 @@
 
        async function hentJson() {
            console.log("Henter json");
-           const url = "http://nicklasgrafisk.dk/kea/07-CMS/kalklandet/wordpress/wp-json/wp/v2/om_os";
+           const url = "http://nicklasgrafisk.dk/kea/07-CMS/kalklandet/wordpress/wp-json/wp/v2/om_os/20";
 
            const myJson = await fetch(url);
            // den hentede data skal tolkes som json
            indhold = await myJson.json();
            //Kald funktion der viser data i DOM
            visIndhold();
+           console.log("indhold",indhold)
 
            //Henter indholdet
        }
     function visIndhold() {
         console.log("Viser indhold");
-        document.querySelector(".overskrift").innerHTML = indhold.title.rendered;
-        document.querySelector(".indhold").innerHTML = indhold.content.rendered;
+        document.querySelector(".om-overskrift").innerHTML = indhold.titel;
+        document.querySelector(".om-indhold").innerHTML = indhold.indhold1;
         // Viser indholdet
     }
 
