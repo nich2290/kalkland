@@ -8,10 +8,38 @@ html {
 }
 
 
+/*Fonts*/
+@font-face {
+    font-family: 'limestonebold';
+    src: url('fonts/limestone_bold-webfont.woff2') format('woff2'),
+        url('fonts/limestone_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'limestoneheavy';
+    src: url('fonts/limestone_heavy-webfont.woff2') format('woff2'),
+        url('fonts/limestone_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'limestonelight';
+    src: url('fonts/limestone_light-webfont.woff2') format('woff2'),
+        url('fonts/limestone_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @font-face {
     font-family: 'limestoneregular';
-    src: url('limestone_regular-webfont.woff2') format('woff2'),
-        url('limestone_regular-webfont.woff') format('woff');
+    src: url('fonts/limestone_regular-webfont.woff2') format('woff2'),
+        url('fonts/limestone_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
