@@ -72,6 +72,12 @@ nav img {
     margin-top: 0.5em;
 }
 
+
+h2 {
+    color: #e76126;
+    font-family: 'limestonelight';
+}
+
 /************ GENERELT SLUT *************/
 
 /************ NAVIGATION START *************/
@@ -128,7 +134,12 @@ nav img {
         text-decoration: none;
         text-transform: uppercase;
         z-index: 10;
+        font-family: 'limestoneheavy';
 
+    }
+
+    nav ul li a:hover {
+        color: #e76126;
     }
 
     nav ul ul {
@@ -419,6 +430,7 @@ a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: 'limestoneheavy';
 }
 
 #menu a:hover {
@@ -451,7 +463,6 @@ a {
 
 /************ INDHOLD START *************/
 .om-overskrift {
-    margin-top: 0.5em;
     margin-bottom: 1em;
 }
 
