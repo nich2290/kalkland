@@ -34,24 +34,26 @@
         position: absolute;
 
 
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+
 
     }
     .fort {
-        top: 80vw;
+        top: 125vw;
         left: 50vw;
     }
     .klint {
-        top: 250vw;
+        top: 275vw;
         left: 50vw;
     }
     .faxe {
-        top: 390vw;
+        top: 385vw;
         left: 50vw;
     }
+        .skjul {
+            display: none;
+        }
     .middle img{
-        width: 90vw;
+        width: 40vw;
     }
     .attraktion1 .image {
         opacity: 1;
@@ -93,6 +95,11 @@
         text-decoration: none;
     }
         }
+    /************ TABLET ***********/
+    @media only screen and (min-width: 667px){
+
+
+    }
     /*********** DESKTOP START ***********/
 
     @media only screen and (min-width: 1024px){
@@ -120,6 +127,9 @@
         z-index: -10;
 
     }
+        .skjul2 {
+            display: none;
+        }
 
     /******** OVERLAY*********/
     .attraktion1 {
@@ -202,7 +212,7 @@
     }
 }
 
-    /************ TABLET ***********/
+
 
 
 </style>
@@ -250,7 +260,8 @@
                 <img src="img/stevns_fort.jpg" alt="Stevns fort" class="image" style="width:100%">
                 <div class="middle fort">
                     <a href="stevns-fort.html">
-                        <img src="img/SVG/Stens-fort-svg.svg">
+                        <img class="skjul" src="img/SVG/Stens-fort-svg.svg">
+                        <img class="skjul2"src="img/mobilimg/fort.png">
 
                     </a>
                 </div>
@@ -258,7 +269,8 @@
             <div class="attraktion2">
                 <img src="img/stenvs_klint.jpg" alt="Stevns klint" class="image" style="width:100%">
                 <div class="middle klint">
-                    <img src="img/SVG/Stevns-klint-.svg">
+                    <img class="skjul" src="img/SVG/Stevns-klint-.svg">
+                    <img class="skjul2"src="img/mobilimg/klint.png">
 
                 </div>
 
@@ -266,7 +278,8 @@
             <div class="attraktion3">
                 <img src="img/geomuseum_faxe.jpg" alt="Geomuseum Faxe" class="image" style="width:100%">
                 <div class="middle faxe">
-                    <img src="img/SVG/geomuseum-svg.svg">
+                    <img class="skjul" src="img/SVG/geomuseum-svg.svg">
+                    <img class="skjul2"src="img/mobilimg/Geomuseum.png">
                 </div>
 
             </div>
