@@ -138,11 +138,33 @@
 </style>
 
 <body>
-    <Header>
+    <header>
         <nav role='navigation'>
             <a href="index.html"><img src="img/SVG/Artboard%2010.svg"></a>
-            <ul>
-                <li><a href="index.html">Start side</a></li>
+            <div id="menuToggle">
+                <!-- Skjult checkbox = click reciever-->
+                <input type="checkbox" />
+
+                <!--Spans fungerer som hamburger-->
+                <span class="hover"></span>
+                <span class="hover"></span>
+                <span class="hover"></span>
+
+
+                <ul id="menu">
+                    <li><a href="index.html">Startside</a></li>
+                    <li><a href="Attraktioner.html">Attraktioner</a></li>
+                    <li><a href="aktuelt.html">Aktuelt</a></li>
+                    <li><a href="om-os.html">Om os</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+            </div>
+
+
+
+            <ul class="pc-menu">
+                <li><a href="index.html">Startside</a></li>
                 <li><a href="Attraktioner.html">Attraktioner</a>
 
                 </li>
@@ -151,14 +173,14 @@
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
-    </Header>
+    </header>
     <section>
         <div id="attraktioner">
             <div class="attraktion1">
                 <img src="img/stevns_fort.jpg" alt="Stevns fort" class="image" style="width:100%">
                 <div class="middle">
                     <a href="stevns-fort.html">
-                       <img src="img/SVG/Stens-fort-svg.svg">
+                        <img src="img/SVG/Stens-fort-svg.svg">
 
                     </a>
                 </div>
@@ -166,7 +188,7 @@
             <div class="attraktion2">
                 <img src="img/stenvs_klint.jpg" alt="Stevns klint" class="image" style="width:100%">
                 <div class="middle">
-                   <img src="img/SVG/Stevns-klint-.svg">
+                    <img src="img/SVG/Stevns-klint-.svg">
 
                 </div>
 
