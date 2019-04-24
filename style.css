@@ -314,14 +314,10 @@ a {
     transition: color 0.3s ease;
 }
 
-a:hover {
-    color: tomato;
-}
-
 #menuToggle {
     display: block;
     position: absolute;
-    top: 1em;
+    top: 1.83em;
     right: 1em;
 
     z-index: 1;
@@ -329,6 +325,12 @@ a:hover {
     -webkit-user-select: none;
     user-select: none;
 }
+
+#menuToggle:hover span {
+    background: black;
+}
+
+
 
 #menuToggle input {
     display: block;
@@ -356,7 +358,7 @@ a:hover {
     margin-bottom: 5px;
     position: relative;
 
-    background: black;
+    background: #e76126;
     border-radius: 3px;
 
     z-index: 1;
@@ -383,7 +385,7 @@ a:hover {
 #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: white;
 }
 
 /*
@@ -402,6 +404,11 @@ a:hover {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
+
+#menuToggle input:checked:hover ~ span {
+    background: black;
+}
+
 /*
  * Make this absolute positioned
  * at the top left of the screen
@@ -410,11 +417,11 @@ a:hover {
     position: absolute;
     width: 300px;
     margin: -100px 0 0 0;
-    padding: 50px;
+    padding: 25px;
     padding-top: 125px;
     right: -100px;
 
-    background: #ededed;
+    background: #e76126;
     list-style-type: none;
 
     transform-origin: 0% 0%;
@@ -426,6 +433,16 @@ a:hover {
 #menu li {
     padding: 10px 0;
     font-size: 22px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu a:hover {
+    color: black;
 }
 
 /*
