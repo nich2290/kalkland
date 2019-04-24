@@ -15,7 +15,7 @@
 
     }
 
-    .om-indhold {
+    .om-wrapper {
         margin-left: 10vw;
         margin-right: 10vw;
     }
@@ -64,7 +64,12 @@
 
     <!-- Her starter indhold -->
     <h2 class="om-overskrift"></h2>
-    <main class="om-indhold"></main>
+    <div class="om-wrapper">
+       <div class="om-indhold"></div>
+        <div class="om-indhold2"></div>
+        <div class="om-indhold3"></div>
+    </div>
+
 
     <!--- HER STARTER FOOTER -->
     <footer class="contentwrapper">
@@ -108,6 +113,8 @@
             console.log("Viser indhold");
             document.querySelector(".om-overskrift").innerHTML = indhold.titel;
             document.querySelector(".om-indhold").innerHTML = indhold.indhold1;
+            document.querySelector(".om-indhold2").innerHTML = indhold.indhold2;
+            document.querySelector(".om-indhold3").innerHTML = indhold.indhold3;
             // Viser indholdet
         }
 

@@ -13,6 +13,9 @@
         margin-top: 7vw;
         margin-left: 10vw;
     }
+    .kontakt-indhold {
+        margin-left: 10vw;
+    }
 
 
 
@@ -61,7 +64,7 @@
 
 
     <!-- Her starter indhold -->
-    <h2 class="kontakt-overskrift">Kontakt</h2>
+    <h2 class="kontakt-overskrift"></h2>
     <main class="kontakt-indhold">
 
     </main>
@@ -92,20 +95,21 @@
 
         async function hentJson() {
             console.log("Henter json");
-            // const url = "http://nicklasgrafisk.dk/kea/07-CMS/sushiwp/wordpress/wp-json/wp/v2/pages/20";
+             const url = "http://nicklasgrafisk.dk/kea/07-CMS/kalklandet/wordpress/wp-json/wp/v2/kontakt/32";
             // Henter data filen
             const myJson = await fetch(url);
             // den hentede data skal tolkes som json
             indhold = await myJson.json();
             //Kald funktion der viser data i DOM
             visIndhold();
+            console.log("indhold", indhold);
 
             //Henter indholdet
         }
 
         function visIndhold() {
             console.log("Viser indhold");
-            document.querySelector(".kontakt-overskrift").innerHTML = indhold.title;
+            document.querySelector(".kontakt-overskrift").innerHTML = indhold.titel;
             document.querySelector(".kontakt-indhold").innerHTML = indhold.indhold1;
             // Viser indholdet
         }
