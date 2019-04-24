@@ -66,11 +66,7 @@ nav img {
     width: 4em;
     margin-left: 0.5em;
     margin-top: 0.5em;
-
-
 }
-
-
 
 /************ GENERELT SLUT *************/
 
@@ -186,7 +182,6 @@ nav img {
 
 
 /************ INDHOLD START *************/
-
 
 
 
@@ -451,10 +446,28 @@ a {
 
 
 /************ INDHOLD START *************/
+.om-overskrift {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.om-indhold {
+    margin-bottom: 0.7em;
+}
+
+.om-indhold2 {
+    margin-bottom: 0.7em;
+}
+
+.om-indhold3 {
+    margin-bottom: 0.7em;
+}
 
 
 
-
+.kontakt-indhold4 {
+    margin-bottom: 0.7em;
+}
 
 
 /************ INDHOLD SLUT *************/

@@ -67,6 +67,14 @@
     <h2 class="kontakt-overskrift"></h2>
     <main class="kontakt-indhold">
 
+        <div class="kontakt-overskrift"></div>
+
+        <div class="kontakt-indhold1"></div>
+        <div class="kontakt-indhold2"></div>
+        <div class="kontakt-indhold3"></div>
+        <div class="kontakt-indhold4"></div>
+        <div class="kontakt-indhold5"></div>
+
     </main>
 
     <!--- HER STARTER FOOTER -->
@@ -95,7 +103,7 @@
 
         async function hentJson() {
             console.log("Henter json");
-             const url = "http://nicklasgrafisk.dk/kea/07-CMS/kalklandet/wordpress/wp-json/wp/v2/kontakt/32";
+            const url = "http://nicklasgrafisk.dk/kea/07-CMS/kalklandet/wordpress/wp-json/wp/v2/kontakt/32";
             // Henter data filen
             const myJson = await fetch(url);
             // den hentede data skal tolkes som json
@@ -110,7 +118,11 @@
         function visIndhold() {
             console.log("Viser indhold");
             document.querySelector(".kontakt-overskrift").innerHTML = indhold.titel;
-            document.querySelector(".kontakt-indhold").innerHTML = indhold.indhold1;
+            document.querySelector(".kontakt-indhold1").innerHTML = indhold.indhold1;
+            document.querySelector(".kontakt-indhold2").innerHTML = indhold.indhold2;
+            document.querySelector(".kontakt-indhold3").innerHTML = indhold.indhold3;
+            document.querySelector(".kontakt-indhold4").innerHTML = indhold.indhold4;
+            document.querySelector(".kontakt-indhold5").innerHTML = indhold.indhold5;
             // Viser indholdet
         }
 
