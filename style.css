@@ -77,11 +77,13 @@ h2 {
     font-family: 'limestonelight';
 
 }
+
 h1 {
-            text-align: center;
+    text-align: center;
     color: #FE6400;
     font-family: 'limestonelight';
-        }
+}
+
 /************ GENERELT SLUT *************/
 
 /************ NAVIGATION START *************/
@@ -526,25 +528,22 @@ footer {
         top: 0;
         z-index: 10;
     }
+
     .kontaktnav {
         background-color: #e76126;
         color: white;
     }
+
     .kontaktnav:hover {
         color: black;
     }
+
     header {
         z-index: 1;
     }
 
     #menuToggle {
         visibility: hidden;
-    }
-
-    nav img {
-        width: 4em;
-
-
     }
 
     .pc-menu {
