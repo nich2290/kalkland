@@ -71,11 +71,17 @@ nav img {
 }
 
 
+h1,
 h2 {
     color: #FE6400;
     font-family: 'limestonelight';
-}
 
+}
+h1 {
+            text-align: center;
+    color: #FE6400;
+    font-family: 'limestonelight';
+        }
 /************ GENERELT SLUT *************/
 
 /************ NAVIGATION START *************/
