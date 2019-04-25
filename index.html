@@ -20,7 +20,12 @@
 
 
     @media only screen and (min-width: 1024px){
-    #myVideo {
+        nav {
+            position: static;
+        }
+
+
+        #myVideo {
         position: absolute;
 
 
@@ -31,12 +36,21 @@
         pointer-events: none;
 
     }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
 
     #splashvideo img {
         width: 100%;
     }
         .contentwrapper {
-            position: fixed;
+            position: static;
+            bottom: 0;
+            height: 10vh;
+            margin-top: -0.5vw;
         }
 }
     /* Add some content at the bottom of the video/page */
@@ -48,7 +62,7 @@
 
 <body>
     <header>
-        <nav role='navigation'>
+        <nav id="navbar" role='navigation'>
             <a href="index.html"><img src="img/SVG/Artboard%2010.svg"></a>
             <div id="menuToggle">
                 <!-- Skjult checkbox = click reciever-->
@@ -114,6 +128,24 @@
 
     <script>
 
+        //Kilde: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp?fbclid=IwAR3wEHxRExqaK8dqWlULXH_Z03_f-no3jIpNaxF0vUrm8nb4PWsVwwuCjlY //
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
 
 
