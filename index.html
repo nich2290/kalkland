@@ -14,7 +14,6 @@
     /* Style the video: 100% width and height to cover the entire window */
     .contentwrapper {
         position: absolute;
-        bottom: 0;
     }
 
 
@@ -93,29 +92,29 @@
                 </li>
                 <li><a href="aktuelt.html">Aktuelt</a></li>
                 <li><a href="om-os.html">Om os</a></li>
-                <li><a href="kontakt.html"  class="kontaktnav">Kontakt</a></li>
+                <li><a href="kontakt.html" class="kontaktnav">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <section id="splashvideo">
 
-<video src="video/kalklandet.mp4" width="100%" controls></video>
+        <video src="video/kalklandet.mp4" width="100%" controls></video>
 
         <!-- Optional: some overlay text to describe the video -->
-</section>
-            <footer class="contentwrapper">
+    </section>
+    <footer class="contentwrapper">
         <div class="social"><a href="YOUR FACEBOOK URL">
-<img src="img/1x/Artboard%203%20copy%202.png">
-</a>
-<a href="YOUR INSTAGRAM URL">
-<img src="img/1x/Artboard%203%20copy.png">
-</a>
-<a href="YOUR TWITTER URL">
-<img src="img/1x/Artboard%203.png">
-</a>
+                <img src="img/1x/Artboard%203%20copy%202.png">
+            </a>
+            <a href="YOUR INSTAGRAM URL">
+                <img src="img/1x/Artboard%203%20copy.png">
+            </a>
+            <a href="YOUR TWITTER URL">
+                <img src="img/1x/Artboard%203.png">
+            </a>
 
 
-</div>
+        </div>
 
 
     </footer>
@@ -127,28 +126,26 @@
 
 
     <script>
-
         //Kilde: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp?fbclid=IwAR3wEHxRExqaK8dqWlULXH_Z03_f-no3jIpNaxF0vUrm8nb4PWsVwwuCjlY //
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+            myFunction()
+        };
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-
-
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
 
     </script>
 </body>
