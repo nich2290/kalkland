@@ -12,7 +12,14 @@
 <style>
     /************ VIDEO ************/
     /* Style the video: 100% width and height to cover the entire window */
+    .contentwrapper {
+        position: absolute;
+        bottom: 0;
+    }
 
+
+
+    @media only screen and (min-width: 1024px){
     #myVideo {
         position: absolute;
 
@@ -28,7 +35,10 @@
     #splashvideo img {
         width: 100%;
     }
-
+        .contentwrapper {
+            position: fixed;
+        }
+}
     /* Add some content at the bottom of the video/page */
 
 
@@ -75,7 +85,7 @@
     </header>
     <section id="splashvideo">
 
-        <img src="img/video_placeholder.jpg">
+
 
         <!-- Optional: some overlay text to describe the video -->
 </section>

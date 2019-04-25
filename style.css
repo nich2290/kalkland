@@ -386,17 +386,16 @@ a {
 
 /************ FOOTER START *************/
 .contentwrapper {
-    width: 100%;
-    height: 10%;
-    background-color: #FE6400;
-    overflow: visible;
-    bottom: 0;
-    position: absolute;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 1fr;
     display: grid;
+}
 
-
+footer {
+     width: 100%;
+    height: 10%;
+    background-color: #FE6400;
+    overflow: visible;
 
 }
 .contentwrapper img {
@@ -407,6 +406,7 @@ a {
     grid-column: 2;
     grid-row: 1;
     align-self: center;
+    text-align: center;
 
 }
 .social a {
@@ -543,9 +543,12 @@ a {
 .social {
     grid-column: 3;
     grid-row: 1;
-    align-self: center;
+    text-align: center;
 
 }
+    .social img {
+        padding-left: 1vw;
+    }
 .social a {
     text-decoration: none;
 }
