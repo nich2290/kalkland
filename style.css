@@ -335,9 +335,9 @@ a {
 
 /************ FOOTER START *************/
 .contentwrapper {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    display: grid;
 }
 
 footer {
@@ -349,7 +349,7 @@ footer {
 }
 
 .contentwrapper img {
-    width: 20%;
+    width: 100%;
 
 }
 
@@ -363,7 +363,7 @@ footer {
 .social img {
     display: inline-block;
     margin: 0 0.5em;
-    width: 20%;
+    width: 10%;
 }
 
 .social a {
@@ -548,7 +548,7 @@ footer {
     .contentwrapper {
         width: 100%;
         height: 10%;
-        background-color: #FE6400;
+        background-color: #e76126;
         overflow: visible;
         bottom: 0;
         position: absolute;
