@@ -1,6 +1,7 @@
 /************ GENERELT START *************/
 html {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -47,7 +48,7 @@ html {
 }
 
 *::selection {
-    background: #e76126;
+    background: #FE6400;
     color: white;
 }
 
@@ -72,7 +73,7 @@ nav img {
 
 
 h2 {
-    color: #e76126;
+    color: #FE6400;
     font-family: 'limestonelight';
 }
 
@@ -191,7 +192,7 @@ a {
     margin-bottom: 5px;
     position: relative;
 
-    background: #e76126;
+    background: #FE6400;
     border-radius: 3px;
 
     z-index: 1;
@@ -254,7 +255,7 @@ a {
     padding-top: 125px;
     right: -100px;
 
-    background: #e76126;
+    background: #FE6400;
     list-style-type: none;
 
     transform-origin: 0% 0%;
@@ -358,7 +359,12 @@ footer {
     grid-row: 1;
     align-self: center;
     text-align: center;
+}
 
+.social img {
+    display: inline-block;
+    margin: 0 0.5em;
+    width: 20%;
 }
 
 .social a {
@@ -485,7 +491,7 @@ footer {
     }
 
     nav ul li a:hover {
-        color: #e76126;
+        color: #FE6400;
     }
 
     nav ul ul {
