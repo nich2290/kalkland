@@ -1,6 +1,3 @@
-
-
-
 /************ GENERELT START *************/
 html {
     overflow-x: hidden;
@@ -48,10 +45,12 @@ html {
     font-family: 'limestoneregular';
 
 }
+
 *::selection {
-background:#e76126;
-color:white;
+    background: #e76126;
+    color: white;
 }
+
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
 *,
@@ -111,56 +110,6 @@ h2 {
 
 /************ FOOTER SLUT *************/
 
-
-/*******************************TABLET************************************/
-
-
-
-/************ GENERELT START *************/
-
-
-
-
-
-/************ GENERELT SLUT *************/
-
-
-
-
-
-
-/************ NAVIGATION START *************/
-
-
-
-
-/************ NAVIGATION SLUT *************/
-
-
-
-
-
-
-/************ INDHOLD START *************/
-
-
-
-
-
-
-/************ INDHOLD SLUT *************/
-
-
-
-
-
-/************ FOOTER START *************/
-
-
-
-
-
-/************ FOOTER SLUT *************/
 
 
 /*******************************MOBIL************************************/
@@ -386,22 +335,24 @@ a {
 
 /************ FOOTER START *************/
 .contentwrapper {
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     display: grid;
 }
 
 footer {
-     width: 100%;
+    width: 100%;
     height: 10%;
     background-color: #FE6400;
     overflow: visible;
 
 }
+
 .contentwrapper img {
     width: 20%;
 
 }
+
 .social {
     grid-column: 2;
     grid-row: 1;
@@ -409,12 +360,72 @@ footer {
     text-align: center;
 
 }
+
 .social a {
     text-decoration: none;
 }
 
 
 /************ FOOTER SLUT *************/
+
+
+
+/*******************************TABLET************************************/
+
+
+
+/************ GENERELT START *************/
+
+
+
+
+
+/************ GENERELT SLUT *************/
+
+
+
+
+
+
+/************ NAVIGATION START *************/
+
+
+
+
+/************ NAVIGATION SLUT *************/
+
+
+
+
+
+
+/************ INDHOLD START *************/
+
+
+
+
+
+
+/************ INDHOLD SLUT *************/
+
+
+
+
+
+/************ FOOTER START *************/
+
+
+
+
+
+/************ FOOTER SLUT *************/
+
+
+
+
+
+
+
 /*******************************DESKTOP************************************/
 
 @media only screen and (min-width: 1024px) {
@@ -521,36 +532,41 @@ footer {
     .pc-menu {
         visibility: visible !important;
     }
-.contentwrapper {
-    width: 100%;
-    height: 10%;
-    background-color: #FE6400;
-    overflow: visible;
-    bottom: 0;
-    position: absolute;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    display: grid;
-    margin-bottom: 0;
+
+    .contentwrapper {
+        width: 100%;
+        height: 10%;
+        background-color: #FE6400;
+        overflow: visible;
+        bottom: 0;
+        position: absolute;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        display: grid;
+        margin-bottom: 0;
 
 
 
-}
-.contentwrapper img {
-    width: 20%;
+    }
 
-}
-.social {
-    grid-column: 3;
-    grid-row: 1;
-    text-align: center;
+    .contentwrapper img {
+        width: 20%;
 
-}
+    }
+
+    .social {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: center;
+
+    }
+
     .social img {
         padding-left: 1vw;
     }
-.social a {
-    text-decoration: none;
-}
+
+    .social a {
+        text-decoration: none;
+    }
 
 }
